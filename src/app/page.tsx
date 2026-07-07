@@ -21,13 +21,13 @@ export default function Home() {
         
         {/* Huge Typography Block */}
         <div className="flex flex-col relative w-full mt-10">
-          <h1 className="text-[18vw] md:text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
+          <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
             CREATIVE
           </h1>
           
           <div className="flex flex-col md:flex-row md:items-start relative">
             <div className="w-[3px] h-[10vw] bg-white/20 mt-4 mr-6 hidden md:block"></div>
-            <h1 className="text-[18vw] md:text-[12vw] leading-[0.85] font-black text-white/30 tracking-tighter m-0 p-0">
+            <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-black text-white/30 tracking-tighter m-0 p-0">
               DEVELOPER
             </h1>
             
