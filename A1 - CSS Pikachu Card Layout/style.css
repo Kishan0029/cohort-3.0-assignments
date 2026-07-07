@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+/* div {
+    width: 100%;
+    height: 100%;
+} */
+
+@font-face {
+    font-family: LoewNext-Bold;
+    src: url(Fonts/LoewNext-Bold-BF63fd638abb9de.otf);
+}
+
+@font-face {
+    font-family: LoewNext-Regular;
+    src: url(Fonts/LoewNext-Regular-BF63fd638aa2303.otf);
+}
+
+@font-face {
+    font-family: LoewNext-Light;
+    src: url(Fonts/LoewNext-Light-BF63fd638b137ef.otf);
+}
+
+@font-face {
+    font-family: LoewNext-Black; /* The thickest weight! */
+    src: url(Fonts/LoewNext-Black-BF63fd638af38a1.otf);
+}
+
+#box1 {
+    width: 100%;
+    height: 100%;
+    background-color: #fbc60b;
+    border: 20px solid white;  
+    border-radius: 50px;
+    position: absolute;
+}
+
+#box1 #subtext {
+    position: absolute;
+    font-size: 16px;
+    font-family: LoewNext-Bold;
+    left: 69px;
+    top: 22%;
+    letter-spacing: 0.4em;
+}
+
+#box1 #maintext {
+    position: absolute;
+    font-family: LoewNext-Black;
+    left: 60px;
+    top: 21%;
+    font-size: 150px;
+}
+
+#box1 #Paragraph {
+    position: absolute;
+    font-size: 17px;
+    font-family: LoewNext-Regular;
+    left: 69px;
+    top: 48%;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.72);
+}
+
+#box1 #number {
+    position: absolute;
+    font-size: 20px;
+    font-family: LoewNext-Bold;
+    left: 69px;
+    top: 70%;
+}
+
+#box2 {
+    width: 40%;
+    height: 100%;
+    background-color: #fae7b4;
+    border: 20px solid white;  
+    border-left: none;
+    border-radius: 0px 60px 60px 0px;  
+    position: absolute;
+    left: 60%;
+}
+
+#box2 #menu-icon {              
+    font-size: 36px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+/* Took help of AI to make the Pagination Dots */
+
+/* Position the container on the right side */
+#box2 .dots {
+    position: absolute;
+    right: 45px;
+    top: 45%; 
+}
+
+/* Style every dot */
+.dots .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #d8c291; /* Dark yellow color */
+    border-radius: 50%;        /* This is the magic that turns a square into a circle! */
+    margin-bottom: 14px;       /* Adds space below each dot */
+}
+
+/* Style just the active dot */
+.dots .dot.active {
+    background-color: #000;    /* Make it black */
+    transform: scale(1.15);    /* Make it slightly bigger */
+}
+
+/* #pikachu img{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+#pikachu img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    left: 986px;
+    top: 54%;
+    transform: translate(-50%, -50%);
+}
+
+#pokemon img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    left: 50px;
+    top: 50px;
+}
