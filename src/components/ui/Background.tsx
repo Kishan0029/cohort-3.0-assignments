@@ -3,14 +3,12 @@ import { motion } from "framer-motion";
 
 export function Background() {
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10 bg-[#020617]">
-      {/* Simplified Background Gradient for Better Performance */}
-      <div 
-        className="absolute top-[-30%] left-[-10%] w-[70vw] h-[70vw] min-w-[600px] min-h-[600px] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.08)_0%,rgba(0,0,0,0)_70%)]" 
-      />
-      
-      <div 
-        className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] min-w-[500px] min-h-[500px] rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.08)_0%,rgba(0,0,0,0)_70%)]" 
+    <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10 bg-black">
+      {/* Generated 3D Mesh Wave Image aligned to right */}
+      <img 
+        src="/mesh_wave.png"
+        alt="Mesh Wave"
+        className="absolute top-0 right-0 h-full w-[80vw] max-w-[1400px] object-cover object-right opacity-90 mix-blend-lighten"
       />
 
       {/* Structured Minimal Grid to eliminate the "empty" feeling */}
