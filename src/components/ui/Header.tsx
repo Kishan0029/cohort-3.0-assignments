@@ -23,7 +23,7 @@ export function Header() {
     >
       <div className="w-full px-10 flex items-center justify-between font-mono">
         <div className="text-white font-bold text-sm tracking-wider">
-          KISHAN.IO
+          KISHAN.SHERYIANS.COHORT 3.0
         </div>
         
         <nav className="hidden md:flex items-center gap-16">

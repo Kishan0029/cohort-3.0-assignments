@@ -56,6 +56,12 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        {/* Minimal Scroll Indicator */}
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3 animate-pulse">
+          <span className="font-mono text-[8px] uppercase tracking-[0.4em] text-white/30">Scroll</span>
+          <div className="w-[1px] h-8 bg-gradient-to-b from-white/40 to-transparent"></div>
+        </div>
       </div>
 
       {/* Content Below Fold */}
