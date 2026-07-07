@@ -21,13 +21,13 @@ export default function Home() {
         
         {/* Huge Typography Block */}
         <div className="flex flex-col relative w-full mt-10">
-          <h1 className="text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
+          <h1 className="text-[18vw] md:text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
             CREATIVE
           </h1>
           
-          <div className="flex items-start relative">
+          <div className="flex flex-col md:flex-row md:items-start relative">
             <div className="w-[3px] h-[10vw] bg-white/20 mt-4 mr-6 hidden md:block"></div>
-            <h1 className="text-[12vw] leading-[0.85] font-black text-white/30 tracking-tighter m-0 p-0">
+            <h1 className="text-[18vw] md:text-[12vw] leading-[0.85] font-black text-white/30 tracking-tighter m-0 p-0">
               DEVELOPER
             </h1>
             
@@ -40,18 +40,18 @@ export default function Home() {
         </div>
 
         {/* Bottom Elements */}
-        <div className="flex justify-between items-end w-full border-t border-white/[0.05] pt-10">
-          <div className="flex flex-col justify-between h-full gap-20">
-            <p className="font-mono text-[11px] text-white/60 tracking-widest uppercase">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full border-t border-white/[0.05] pt-6 md:pt-10 gap-6 md:gap-0">
+          <div className="flex flex-col justify-between h-full gap-6 md:gap-20">
+            <p className="font-mono text-[9px] md:text-[11px] text-white/60 tracking-widest uppercase">
               // SCALABLE WEB & AI SOLUTIONS.
             </p>
-            <p className="font-mono text-[10px] text-white/40 tracking-[0.2em] uppercase">
+            <p className="font-mono text-[9px] md:text-[10px] text-white/40 tracking-[0.2em] uppercase">
               EXPLORE MY WORK ↓
             </p>
           </div>
           
-          <div className="max-w-[400px]">
-            <p className="font-mono text-[10px] leading-loose text-white/40 text-justify">
+          <div className="max-w-full md:max-w-[400px]">
+            <p className="font-mono text-[9px] md:text-[10px] leading-loose text-white/40 text-left md:text-justify">
               Full-stack developer and AI automation engineer passionate about building scalable web applications, intelligent workflows, and real-world AI solutions. Focused on clean architecture, performance, and creating products that solve meaningful business problems.
             </p>
           </div>
