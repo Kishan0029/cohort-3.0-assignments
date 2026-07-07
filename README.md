@@ -1,19 +1,27 @@
-# Sheryians Coding School - Cohort 3.0 Tasks
+<div align="center">
+  <h1>🚀 Sheryians Cohort 3.0</h1>
+  <p><strong>A curated collection of my assignments and coursework.</strong></p>
+  <br>
+  <a href="https://kishan-sheryians.vercel.app/"><b>👉 VIEW LIVE DASHBOARD 👈</b></a>
+</div>
 
-Welcome to my journey through the **Sheryians Coding School Cohort 3.0**! This repository serves as a centralized collection of my assignments, projects, and coursework. 
+<br>
 
-It is divided into two main parts:
-1. **Raw Assignments:** Individual folders (like `A1 - CSS Pikachu Card Layout`) containing the raw HTML/CSS for each assignment.
-2. **Dashboard:** A custom Next.js portfolio application that beautifully showcases these assignments live.
+### 📁 Assignments Log
 
-## Live Dashboard
-🔗 **[View Live Dashboard on Vercel](https://kishan-sheryians.vercel.app/)**
+| # | Project Name | Description | Tech Stack | Status |
+|:-:|---|---|---|:-:|
+| **A1** | [Pikachu Card Layout](./A1%20-%20CSS%20Pikachu%20Card%20Layout) | Complex, pixel-perfect UI built from scratch using absolute positioning and local fonts. | HTML, Vanilla CSS | ✅ |
 
-## Directory Structure
-- `/A1 - CSS Pikachu Card Layout/` - First assignment: Building a complex split-screen Pikachu card using pixel-perfect absolute positioning in raw HTML/CSS.
-- `/Dashboard/` - The Next.js web application that serves as a portfolio to view all assignments.
+<br>
 
-## Deployment Notes (Vercel)
-The live dashboard is deployed via Vercel. 
-- **Root Directory:** Ensure Vercel's Root Directory setting is configured to `Dashboard`.
-- **Trailing Slashes:** The Next.js app has `trailingSlash: true` enabled so that relative links inside raw static assignment files work perfectly when served.
+### 🏗️ Architecture
+
+| Component | Description |
+|---|---|
+| **`/Dashboard`** | The custom Next.js application that powers the live portfolio. |
+| **Raw Folders** | Standalone directories (e.g. `A1 - ...`) containing the original, raw assignment code. |
+
+<br>
+
+> **Note:** The live portfolio is hosted on Vercel, pointing directly to the `/Dashboard` root directory.
