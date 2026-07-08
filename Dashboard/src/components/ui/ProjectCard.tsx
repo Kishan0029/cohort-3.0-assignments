@@ -50,7 +50,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <img 
               src={project.thumbnail} 
               alt={project.title}
-              className="w-full h-full object-cover opacity-80 transition-all duration-700 group-hover/thumbnail:scale-105 group-hover/thumbnail:opacity-40"
+              className="w-full h-full object-cover object-top opacity-80 transition-all duration-700 group-hover/thumbnail:scale-105 group-hover/thumbnail:opacity-40"
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/thumbnail:opacity-100 transition-opacity duration-300">
               <div className="flex items-center gap-2 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-white shadow-xl">
@@ -127,7 +127,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             >
               <button 
                 onClick={(e) => { e.stopPropagation(); setIsImageOpen(false); }}
-                className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors z-[10000] cursor-pointer"
+                className="fixed top-4 right-4 md:top-8 md:right-8 p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors z-[10000] cursor-pointer"
               >
                 <X size={24} />
               </button>
