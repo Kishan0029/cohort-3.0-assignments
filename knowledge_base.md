@@ -33,3 +33,4 @@
 
 ---
 *Note to Agent: Always read this file before assisting the user to understand their current skill level, and append new concepts/progress here after each major learning milestone.*
+*CRITICAL RULE: Only add concepts to the knowledge base if the USER actually learned and executed them. Do NOT add tasks, setups, or deployments that were completely done by the AI agent on the user's behalf.*
