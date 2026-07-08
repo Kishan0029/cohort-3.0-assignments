@@ -77,9 +77,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
             {projectsData.map((project, idx) => (
-              <ProjectCard key={project.id} project={project} index={idx} />
+              <div key={project.id} className="break-inside-avoid">
+                <ProjectCard project={project} index={idx} />
+              </div>
             ))}
           </div>
         </section>

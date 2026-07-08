@@ -38,19 +38,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-        className="group h-full flex"
+        className="group flex"
       >
-        <Spotlight className="flex flex-col w-full h-full">
+        <Spotlight className="flex flex-col w-full">
           {/* Minimal Thumbnail */}
           <div 
-            className="relative h-48 w-full border-b border-white/[0.04] bg-[#050505] overflow-hidden cursor-pointer group/thumbnail"
+            className="relative w-full border-b border-white/[0.04] bg-[#050505] overflow-hidden cursor-pointer group/thumbnail"
             onClick={() => setIsImageOpen(true)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={project.thumbnail} 
               alt={project.title}
-              className="w-full h-full object-cover object-top opacity-80 transition-all duration-700 group-hover/thumbnail:scale-105 group-hover/thumbnail:opacity-40"
+              className="w-full h-auto block object-cover opacity-80 transition-all duration-700 group-hover/thumbnail:scale-105 group-hover/thumbnail:opacity-40"
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/thumbnail:opacity-100 transition-opacity duration-300">
               <div className="flex items-center gap-2 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-white shadow-xl">
