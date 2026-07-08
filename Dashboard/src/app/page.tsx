@@ -127,9 +127,9 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <a href="mailto:your@email.com" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
+              <a href="mailto:kishanrevankar001@gmail.com" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
                 <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">Email</span>
-                <span className="text-white/80 text-sm break-all">your@email.com</span>
+                <span className="text-white/80 text-sm break-all">kishanrevankar001@gmail.com</span>
               </a>
               <a href="https://github.com/Kishan0029" target="_blank" rel="noreferrer" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
                 <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">GitHub</span>
