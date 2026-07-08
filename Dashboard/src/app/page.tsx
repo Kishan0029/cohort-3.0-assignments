@@ -11,23 +11,23 @@ export default function Home() {
   const completedProjects = projectsData.filter(p => p.status === "Completed").length;
 
   return (
-    <main className="relative min-h-screen bg-black overflow-x-hidden selection:bg-white/20 font-sans">
+    <main className="relative min-h-screen bg-transparent overflow-x-hidden selection:bg-white/20 font-sans">
       <CommandPalette />
       <Header />
       <Background />
 
       {/* Full Screen Minimalist Hero Section */}
-      <div id="home" className="w-full h-screen min-h-[800px] flex flex-col justify-between px-10 pt-40 pb-12 relative z-10">
+      <div id="home" className="w-full h-screen min-h-[100dvh] md:min-h-[800px] flex flex-col justify-center md:justify-between px-6 md:px-10 pt-24 md:pt-40 pb-20 md:pb-12 relative z-10 gap-12 md:gap-0">
         
         {/* Huge Typography Block */}
-        <div className="flex flex-col relative w-full mt-10">
+        <div className="flex flex-col relative w-full md:mt-10">
           <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
             CREATIVE
           </h1>
           
           <div className="flex flex-col md:flex-row md:items-start relative">
             <div className="w-[3px] h-[10vw] bg-white/20 mt-4 mr-6 hidden md:block"></div>
-            <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-black text-white/30 tracking-tighter m-0 p-0">
+            <h1 className="text-[14vw] md:text-[12vw] leading-[0.85] font-black text-white tracking-tighter m-0 p-0">
               DEVELOPER
             </h1>
             
@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       {/* Content Below Fold */}
-      <div className="w-full px-10 pb-24 relative z-10 bg-black">
+      <div className="w-full px-6 md:px-10 pb-24 relative z-10 bg-black">
         {/* Project Browser */}
         <section id="projects" className="pt-20 border-t border-white/[0.05]">
           <div className="flex items-end justify-between mb-8 pb-4 border-b border-white/[0.06]">
@@ -125,21 +125,21 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <a href="mailto:your@email.com" className="flex items-center gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
-                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors w-24">Email</span>
-                <span className="text-white/80">your@email.com</span>
+              <a href="mailto:your@email.com" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
+                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">Email</span>
+                <span className="text-white/80 text-sm break-all">your@email.com</span>
               </a>
-              <a href="https://github.com/Kishan0029" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
-                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors w-24">GitHub</span>
-                <span className="text-white/80">github.com/Kishan0029</span>
+              <a href="https://github.com/Kishan0029" target="_blank" rel="noreferrer" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
+                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">GitHub</span>
+                <span className="text-white/80 text-sm break-all">github.com/Kishan0029</span>
               </a>
-              <a href="https://www.linkedin.com/in/kishanrevankar29/" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
-                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors w-24">LinkedIn</span>
-                <span className="text-white/80">linkedin.com/in/kishanrevankar29</span>
+              <a href="https://www.linkedin.com/in/kishanrevankar29/" target="_blank" rel="noreferrer" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
+                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">LinkedIn</span>
+                <span className="text-white/80 text-sm break-all">linkedin.com/in/kishanrevankar29</span>
               </a>
-              <a href="https://x.com/Kishan__29" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
-                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors w-24">X (Twitter)</span>
-                <span className="text-white/80">x.com/Kishan__29</span>
+              <a href="https://x.com/Kishan__29" target="_blank" rel="noreferrer" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 p-4 border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-lg group">
+                <span className="text-xs font-mono uppercase tracking-widest text-white/40 group-hover:text-white/80 transition-colors sm:w-24">X (Twitter)</span>
+                <span className="text-white/80 text-sm break-all">x.com/Kishan__29</span>
               </a>
             </div>
           </div>

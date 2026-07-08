@@ -149,3 +149,51 @@ html,body {
     left: 50px;
     top: 50px;
 }
+
+@media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    #box1 #subtext {
+        font-size: 10px;
+        left: 20px;
+        top: 25%;
+    }
+    #box1 #maintext {
+        font-size: 50px;
+        left: 20px;
+        top: 28%;
+    }
+    #box1 #Paragraph {
+        font-size: 11px;
+        left: 20px;
+        top: 45%;
+        width: 50%;
+    }
+    #box1 #number {
+        font-size: 14px;
+        left: 20px;
+        top: 75%;
+    }
+    #box2 .dots {
+        right: 15px;
+    }
+    #box2 #menu-icon {
+        right: 15px;
+        top: 25px;
+        font-size: 20px;
+    }
+    #pokemon img {
+        width: 70px;
+        left: 20px;
+        top: 25px;
+    }
+    #pikachu img {
+        width: 100%;
+        max-width: 45vw;
+        height: auto;
+        object-fit: contain;
+        left: 70%;
+        top: 55%;
+    }
+}

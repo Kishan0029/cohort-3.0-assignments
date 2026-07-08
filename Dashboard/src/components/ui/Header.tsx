@@ -21,8 +21,8 @@ export function Header() {
         scrolled ? "bg-black/60 backdrop-blur-md py-6" : "bg-transparent py-10"
       }`}
     >
-      <div className="w-full px-10 flex items-center justify-between font-mono">
-        <div className="text-white font-bold text-sm tracking-wider">
+      <div className="w-full px-6 md:px-10 flex items-center justify-between font-mono">
+        <div className="text-white font-bold text-xs md:text-sm tracking-wider truncate mr-4">
           KISHAN.SHERYIANS.COHORT 3.0
         </div>
         
