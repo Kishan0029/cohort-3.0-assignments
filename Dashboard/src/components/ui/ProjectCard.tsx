@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Code2, X } from "lucide-react";
+import { ArrowRight, Code2, X, Eye } from "lucide-react";
 import { Spotlight } from "./Spotlight";
 import { useState } from "react";
 
@@ -37,15 +37,21 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <Spotlight className="flex flex-col w-full h-full">
           {/* Minimal Thumbnail */}
           <div 
-            className="relative h-48 w-full border-b border-white/[0.04] bg-[#050505] overflow-hidden cursor-pointer"
+            className="relative h-48 w-full border-b border-white/[0.04] bg-[#050505] overflow-hidden cursor-pointer group/thumbnail"
             onClick={() => setIsImageOpen(true)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={project.thumbnail} 
               alt={project.title}
-              className="w-full h-full object-cover opacity-80 transition-opacity duration-700 group-hover:opacity-100"
+              className="w-full h-full object-cover opacity-80 transition-all duration-700 group-hover/thumbnail:scale-105 group-hover/thumbnail:opacity-40"
             />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/thumbnail:opacity-100 transition-opacity duration-300">
+              <div className="flex items-center gap-2 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-white shadow-xl">
+                <Eye size={16} />
+                <span className="text-xs font-medium tracking-wide">Preview</span>
+              </div>
+            </div>
           </div>
 
           {/* Content */}
@@ -110,7 +116,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsImageOpen(false)}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 sm:p-10 backdrop-blur-sm cursor-zoom-out"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-10 backdrop-blur-sm cursor-zoom-out"
           >
             <button 
               onClick={(e) => { e.stopPropagation(); setIsImageOpen(false); }}
