@@ -19,7 +19,7 @@ export default function Home() {
 
       <PageTransition>
       {/* Full Screen Minimalist Hero Section */}
-      <div id="home" className="w-full h-screen min-h-[100dvh] md:min-h-[800px] flex flex-col justify-center md:justify-between px-6 md:px-10 pt-24 md:pt-40 pb-20 md:pb-12 relative z-10 gap-12 md:gap-0">
+      <div id="home" className="w-full min-h-[100dvh] md:h-screen md:min-h-[800px] flex flex-col justify-center md:justify-between px-6 md:px-10 pt-24 md:pt-40 pb-20 md:pb-12 relative z-10 gap-12 md:gap-0">
         
         {/* Huge Typography Block */}
         <div className="flex flex-col relative w-full md:mt-10">
