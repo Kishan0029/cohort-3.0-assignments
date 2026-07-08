@@ -5,10 +5,13 @@ export function Background() {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10 bg-black">
       {/* Generated 3D Mesh Wave Image aligned to right */}
-      <img 
+      <motion.img 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.9 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
         src="/abstract_mesh_wave.png"
         alt="Mesh Wave"
-        className="absolute top-0 md:right-0 h-full w-full md:w-[80vw] max-w-[1400px] object-cover object-center md:object-right opacity-90 mix-blend-lighten"
+        className="absolute top-0 md:right-0 h-full w-full md:w-[80vw] max-w-[1400px] object-cover object-center md:object-right mix-blend-lighten"
       />
 
       {/* Structured Minimal Grid to eliminate the "empty" feeling */}
