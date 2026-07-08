@@ -14,15 +14,22 @@
 **Concepts Mastered:**
 - **Live Server Selector Quirks**: Understanding how injected `<script>` tags affect `:nth-last-child()` selectors, and how to use `:nth-last-of-type()` or wrapper containers to resolve this.
 - **ID Resolution**: Debugging mismatches between HTML IDs (`id="class1"`) and CSS selectors (`#child1`).
-- **CSS Properties Syntax**: Recognizing valid syntax for backgrounds (avoiding `solid` inside background shorthand values).
+- **CSS Properties Syntax**: Recognizing valid syntax for backgrounds (avoiding `solid` inside background shorthand values) and local fonts (wrapping paths with spaces in quotes `url("...")` rather than using backslash escapes).
+- **Class Selector Case Sensitivity**: Debugging mismatches between HTML classes and CSS class selectors (e.g. `.Heading` matching `class="Heading"` but not `.heading`).
 - **Flexbox Mastery (Flexbox Froggy Completed)**: Full understanding of flex layouts, including alignment (`justify-content`, `align-items`, `align-self`, `align-content`), directions and wrapping (`flex-direction`, `flex-wrap`, `flex-flow`), and item ordering (`order`).
 
-
+### Task 2: Reload Designs Landing Page (Completed)
+**Concepts Mastered:**
+- **Relative vs Absolute Positioning**: Learning how `position: relative` on a parent (like `#hero-section`) anchors its absolutely positioned children (`position: absolute;`).
+- **Margin Collapse**: Understanding how a child element's `margin-top` can collapse with its parent, pushing the entire parent container down, and how to avoid it.
+- **Centering Absolutely Positioned Elements**: Mastering the `left: 50%; transform: translateX(-50%);` technique for perfect horizontal centering.
+- **Advanced Flexbox Alignment**: Deepening flex knowledge with `justify-content` (Main Axis) and `align-items` (Cross Axis), and understanding when to use each based on container height.
+- **Viewport Units vs Percentages**: Learning the critical difference between `100vh` (100% of the screen height) and `100%` (100% of the parent container's height).
+- **Text Styling & Inline Elements**: Using `<span>` tags to isolate and style specific words in a sentence without breaking the layout, and using `-webkit-text-stroke` to create hollow text effects.
 
 ## Next Steps / Goals
 - **Version Control:** Learn how to initialize a Git repository from scratch, add/commit files, link to a remote GitHub repository, and push code manually.
-- **Advanced Flexbox:** Dive deeper into Flexbox properties (flex-direction, flex-wrap, flex-grow, flex-shrink, and gap) to create more responsive designs.
-- Move on to Task 2!
+- Move on to Task 3!
 
 ---
 *Note to Agent: Always read this file before assisting the user to understand their current skill level, and append new concepts/progress here after each major learning milestone.*

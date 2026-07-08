@@ -11,5 +11,18 @@
     "url": "/assignments/A1-CSS-Pikachu-Card-Layout",
     "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A1%20-%20CSS%20Pikachu%20Card%20Layout",
     "thumbnail": "/assignments/A1-CSS-Pikachu-Card-Layout/screenshot.png"
+  },
+  {
+    "id": "a2",
+    "title": "Reload Designs Landing Page",
+    "description": "A modern, stylish landing page implementation focusing on layout and design principles without Flexbox.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Beginner",
+    "date": "2026-07-08",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A2-Reload-Designs-Landing-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A2%20-%20Reload%20Designs%20Landing%20Page",
+    "thumbnail": "/assignments/A2-Reload-Designs-Landing-Page/1.jpg"
   }
 ]
