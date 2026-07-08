@@ -6,6 +6,7 @@ import { Header } from "@/components/ui/Header";
 import { CommandPalette } from "@/components/ui/CommandPalette";
 import projectsData from "@/data/projects.json";
 import { Code2, User, Terminal, MapPin } from "lucide-react";
+import { PageTransition } from "@/components/ui/PageTransition";
 
 export default function Home() {
   const completedProjects = projectsData.filter(p => p.status === "Completed").length;
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Background />
 
+      <PageTransition>
       {/* Full Screen Minimalist Hero Section */}
       <div id="home" className="w-full h-screen min-h-[100dvh] md:min-h-[800px] flex flex-col justify-center md:justify-between px-6 md:px-10 pt-24 md:pt-40 pb-20 md:pb-12 relative z-10 gap-12 md:gap-0">
         
@@ -32,7 +34,7 @@ export default function Home() {
             </h1>
             
             <div className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2">
-              <p className="font-mono text-[10px] text-white/50 tracking-[0.2em] uppercase">
+              <p className="font-mono text-[10px] text-white/50 tracking-[0.2em] uppercase [text-shadow:0_4px_16px_rgba(0,0,0,1)]">
                 Kishan Revankar / Web Developer & AI Engineer
               </p>
             </div>
@@ -42,16 +44,16 @@ export default function Home() {
         {/* Bottom Elements */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full border-t border-white/[0.05] pt-6 md:pt-10 gap-6 md:gap-0">
           <div className="flex flex-col justify-between h-full gap-6 md:gap-20">
-            <p className="font-mono text-[9px] md:text-[11px] text-white/60 tracking-widest uppercase">
+            <p className="font-mono text-[9px] md:text-[11px] text-white/60 tracking-widest uppercase [text-shadow:0_4px_16px_rgba(0,0,0,1)]">
               // SCALABLE WEB & AI SOLUTIONS.
             </p>
-            <p className="font-mono text-[9px] md:text-[10px] text-white/40 tracking-[0.2em] uppercase">
+            <p className="font-mono text-[9px] md:text-[10px] text-white/40 tracking-[0.2em] uppercase [text-shadow:0_4px_16px_rgba(0,0,0,1)]">
               EXPLORE MY WORK ↓
             </p>
           </div>
           
           <div className="max-w-full md:max-w-[400px]">
-            <p className="font-mono text-[9px] md:text-[10px] leading-loose text-white/40 text-left md:text-justify">
+            <p className="font-mono text-[9px] md:text-[10px] leading-loose text-white/40 text-left md:text-justify [text-shadow:0_4px_16px_rgba(0,0,0,1)]">
               Full-stack developer and AI automation engineer passionate about building scalable web applications, intelligent workflows, and real-world AI solutions. Focused on clean architecture, performance, and creating products that solve meaningful business problems.
             </p>
           </div>
@@ -145,6 +147,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      </PageTransition>
     </main>
   );
 }
