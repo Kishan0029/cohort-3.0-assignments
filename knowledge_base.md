@@ -34,3 +34,4 @@
 ---
 *Note to Agent: Always read this file before assisting the user to understand their current skill level, and append new concepts/progress here after each major learning milestone.*
 *CRITICAL RULE: Only add concepts to the knowledge base if the USER actually learned and executed them. Do NOT add tasks, setups, or deployments that were completely done by the AI agent on the user's behalf.*
+*PROJECT DEPLOYMENT RULE: When adding a new assignment/project to the GitHub repository and updating the Next.js Dashboard (`projects.json`), always ensure that all HTML image and font paths in the project use RELATIVE paths (e.g., `./Images/img.png` instead of `/Images/img.png` or `/Project_Name/Images/...`). This is strictly required so that Vercel can serve the nested static assets properly without breaking the image links.*

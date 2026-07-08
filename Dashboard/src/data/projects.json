@@ -1,7 +1,7 @@
 [
   {
     "id": "a1",
-    "title": "CSS Pikachu Card Layout",
+    "title": "A1 - CSS Pikachu Card Layout",
     "description": "A premium, pixel-perfect split-screen UI layout built entirely from scratch. Mastered absolute positioning, local fonts, and the CSS box model without using Flexbox.",
     "status": "Completed",
     "technologies": ["Raw HTML", "Vanilla CSS", "Absolute Positioning"],
@@ -14,7 +14,7 @@
   },
   {
     "id": "a2",
-    "title": "Reload Designs Landing Page",
+    "title": "A2 - Reload Designs Landing Page",
     "description": "A modern, stylish landing page implementation focusing on layout and design principles without Flexbox.",
     "status": "Completed",
     "technologies": ["Raw HTML", "Vanilla CSS"],
