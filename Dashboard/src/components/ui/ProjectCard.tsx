@@ -3,7 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Code2, X, Eye } from "lucide-react";
 import { Spotlight } from "./Spotlight";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 interface ProjectCardProps {
   project: {
@@ -24,6 +25,11 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const [isImageOpen, setIsImageOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <>
@@ -109,31 +115,34 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </Spotlight>
       </motion.div>
 
-      <AnimatePresence>
-        {isImageOpen && (
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setIsImageOpen(false)}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-10 backdrop-blur-sm cursor-zoom-out"
-          >
-            <button 
-              onClick={(e) => { e.stopPropagation(); setIsImageOpen(false); }}
-              className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors z-50"
+      {mounted && createPortal(
+        <AnimatePresence>
+          {isImageOpen && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsImageOpen(false)}
+              className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 p-4 sm:p-10 backdrop-blur-sm cursor-zoom-out"
             >
-              <X size={24} />
-            </button>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src={project.thumbnail} 
-              alt={project.title}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl relative z-40"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
+              <button 
+                onClick={(e) => { e.stopPropagation(); setIsImageOpen(false); }}
+                className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors z-[10000] cursor-pointer"
+              >
+                <X size={24} />
+              </button>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src={project.thumbnail} 
+                alt={project.title}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl relative z-40"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </>
   );
 }
