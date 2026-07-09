@@ -9,6 +9,7 @@ import { createPortal } from "react-dom";
 interface ProjectCardProps {
   project: {
     id: string;
+    category: string;
     title: string;
     description: string;
     status: string;

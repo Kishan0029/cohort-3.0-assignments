@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left-panel {
+  height: 100%;
+  width: 50%;
+  background-color: #fdfdfd;
+}
+
+.right-panel {
+  height: 100%;
+  width: 50%;
+  background-color: #B6342B;
+}
+
+.bug-img {
+  position: absolute;
+  width: 450px;
+  left: 49%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.panel-nav-left {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 70px;
+  padding-left: 60px;
+}
+
+.panel-nav-left h1 {
+  text-transform: uppercase;
+}
+
+.panel-nav-left i {
+  width: 350px;
+  margin-top: 5px;
+  background-color: #efefef;
+  padding: 10px 50px 10px 20px;
+  border: 1px solid rgb(222, 221, 221);
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  color: #555454;
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-left: 120px;
+  padding: 0.1px;
+}
+
+.rotated-title {
+  width: 80px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotated-title h1 {
+  transform: rotate(270deg);
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 45px;
+  font-style: italic;
+}
+
+.details-list {
+  /* Container for info items, if any specific styles are needed later */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.info-item i {
+  color: #B6342B;
+  font-size: 8px;
+}
+
+.info-text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-text h5 {
+  font-weight: 200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+.panel-nav-right {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding-left: 110px; */
+}
+
+.panel-nav-right h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 33%;
+  width: 100%;
+}
+
+.top-section {
+  margin-left: 74px;
+}
+
+.heading-box h1 {
+  position: absolute;
+  top: 18%;
+  left: 70.5%;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f9f7f7;
+  font-weight: 200;
+}
+
+.details-section {
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnail-box img {
+  width: 90px;
+}
+
+.thumbnail-box h5 {
+  color: #e8cfad;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.specs-box {
+  /* Container for specs */
+}
+
+.spec-item {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.spec-item i {
+  font-size: 20px;
+  color: #dabc92;
+}
+
+.divider-img img {
+  width: 55px;
+  padding-top: 8px;
+  position: absolute;
+  left: 74.5%;
+}
+
+.spec-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  color: #ebe5dc;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.spec-details h3 {
+  font-size: 12px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #dabc92;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.price-tag h1 {
+  color: #f6d6a3;
+  font-size: 50px;
+}
+
+.action-options {
+  /* Added specific styling if needed for container */
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ede3e2;
+}
+
+.toggle-item i {
+  font-size: 30px;
+}
+
+.toggle-item h5 {
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-container button {
+  margin-top: 30px;
+  background-color: #dabc92;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 300;
+}

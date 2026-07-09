@@ -77,13 +77,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {projectsData.map((project, idx) => (
-              <div key={project.id} className="break-inside-avoid">
-                <ProjectCard project={project} index={idx} />
+          {["A1", "A2", "A3"].map(category => {
+            const categoryProjects = projectsData.filter(p => p.category === category);
+            if (categoryProjects.length === 0) return null;
+            return (
+              <div key={category} className="mb-16 last:mb-0">
+                <h3 className="text-2xl font-bold text-white/90 mb-6 flex items-center gap-3">
+                  <span className="w-8 h-[1px] bg-white/20"></span>
+                  {category} Assignments
+                  <span className="flex-1 h-[1px] bg-white/5"></span>
+                </h3>
+                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                  {categoryProjects.map((project, idx) => (
+                    <div key={project.id} className="break-inside-avoid">
+                      <ProjectCard project={project} index={idx} />
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </section>
 
         {/* About Section */}

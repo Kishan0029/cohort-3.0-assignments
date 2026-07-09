@@ -1,6 +1,7 @@
 [
   {
     "id": "a1",
+    "category": "A1",
     "title": "A1 - CSS Pikachu Card Layout",
     "description": "A premium, pixel-perfect split-screen UI layout built entirely from scratch. Mastered absolute positioning, local fonts, and the CSS box model without using Flexbox.",
     "status": "Completed",
@@ -13,7 +14,8 @@
     "thumbnail": "/assignments/A1-CSS-Pikachu-Card-Layout/screenshot.png"
   },
   {
-    "id": "a2",
+    "id": "a2-reload",
+    "category": "A2",
     "title": "A2 - Reload Designs Landing Page",
     "description": "A modern, stylish landing page implementation focusing on layout and design principles without Flexbox.",
     "status": "Completed",
@@ -24,5 +26,75 @@
     "url": "/assignments/A2-Reload-Designs-Landing-Page",
     "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A2%20-%20Reload%20Designs%20Landing%20Page",
     "thumbnail": "/assignments/A2-Reload-Designs-Landing-Page/screenshot.png"
+  },
+  {
+    "id": "a2-gunaforycter",
+    "category": "A2",
+    "title": "A2 - Gunaforycter Restaurant Landing Page",
+    "description": "A restaurant landing page building complex grid-like layouts using absolute positioning.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Beginner",
+    "date": "2026-07-09",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A2-Gunaforycter-Restaurant-Landing-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A2%20-%20Gunaforycter%20Restaurant%20Landing%20Page",
+    "thumbnail": "/assignments/A2-Gunaforycter-Restaurant-Landing-Page/screenshot.png"
+  },
+  {
+    "id": "a2-insect",
+    "category": "A2",
+    "title": "A2 - Insect Landing Page",
+    "description": "A creative insect-themed landing page focusing on precise positioning.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Beginner",
+    "date": "2026-07-09",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A2-Insect-Landing-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A2%20-%20Insect%20Landing%20Page",
+    "thumbnail": "/assignments/A2-Insect-Landing-Page/screenshot.png"
+  },
+  {
+    "id": "a3-explore",
+    "category": "A3",
+    "title": "A3 - Explore Art Work Grid Page",
+    "description": "An explore artwork grid page layout design.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-09",
+    "tags": ["UI/UX", "Grid Layout"],
+    "url": "/assignments/A3-Explore-Art-Work-Grid-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A3%20-%20Explore%20Art%20Work%20Grid%20Page",
+    "thumbnail": "/assignments/A3-Explore-Art-Work-Grid-Page/screenshot.png"
+  },
+  {
+    "id": "a3-shinsei",
+    "category": "A3",
+    "title": "A3 - Shinsei Village Landing Page",
+    "description": "A beautiful Shinsei Village landing page layout.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-09",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A3-Shinsei-Village-Landing-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A3%20-%20Shinsei%20Village%20Landing%20Page",
+    "thumbnail": "/assignments/A3-Shinsei-Village-Landing-Page/screenshot.png"
+  },
+  {
+    "id": "a3-squid",
+    "category": "A3",
+    "title": "A3 - Squid Games Landing Page",
+    "description": "A Squid Games themed landing page emphasizing dark mode themes and striking visuals.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-09",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A3-Squid-Games-Landing-Page",
+    "sourceUrl": "https://github.com/Kishan0029/Cohort-3.0-Tasks/tree/main/A3%20-%20Squid%20Games%20Landing%20Page",
+    "thumbnail": "/assignments/A3-Squid-Games-Landing-Page/screenshot.png"
   }
 ]
