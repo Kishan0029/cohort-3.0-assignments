@@ -96,5 +96,47 @@
     "url": "/assignments/A3-Squid-Games-Landing-Page",
     "sourceUrl": "https://github.com/Kishan0029/cohort-3.0-assignments/tree/main/A3/A3%20-%20Squid%20Games%20Landing%20Page",
     "thumbnail": "/assignments/A3-Squid-Games-Landing-Page/screenshot.png"
+  },
+  {
+    "id": "a4-design-1",
+    "category": "A4",
+    "title": "A4 - Design 1",
+    "description": "A luxury fitness themed landing page with complex layout structure.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-16",
+    "tags": ["UI/UX", "Landing Page"],
+    "url": "/assignments/A4-Design-1",
+    "sourceUrl": "https://github.com/Kishan0029/cohort-3.0-assignments/tree/main/A4/A4%20-%20Design%201",
+    "thumbnail": "/assignments/A4-Design-1/screenshot.png"
+  },
+  {
+    "id": "a4-design-2",
+    "category": "A4",
+    "title": "A4 - Design 2",
+    "description": "A personal portfolio landing page for a designer.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-16",
+    "tags": ["UI/UX", "Landing Page", "Portfolio"],
+    "url": "/assignments/A4-Design-2",
+    "sourceUrl": "https://github.com/Kishan0029/cohort-3.0-assignments/tree/main/A4/A4%20-%20Design%202",
+    "thumbnail": "/assignments/A4-Design-2/screenshot.png"
+  },
+  {
+    "id": "a4-design-3",
+    "category": "A4",
+    "title": "A4 - Design 3",
+    "description": "A creative portfolio landing page featuring sleek typography.",
+    "status": "Completed",
+    "technologies": ["Raw HTML", "Vanilla CSS"],
+    "difficulty": "Intermediate",
+    "date": "2026-07-16",
+    "tags": ["UI/UX", "Landing Page", "Portfolio"],
+    "url": "/assignments/A4-Design-3",
+    "sourceUrl": "https://github.com/Kishan0029/cohort-3.0-assignments/tree/main/A4/A4%20-%20Design%203",
+    "thumbnail": "/assignments/A4-Design-3/screenshot.png"
   }
 ]

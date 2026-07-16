@@ -42,3 +42,14 @@
 - **Dark Mode & Themed Designs**: Created heavily themed layouts (Squid Games, Shinsei Village) focusing on dark UI principles and thematic typography.
 - **Grid Layout Patterns**: Explored structured grid-like page structures for artwork display and content organization.
 - **Project Structure & Relative Asset Linking**: Mastered keeping font and image paths relative (e.g., ./assets/img.png) within project folders so they can seamlessly integrate and be served from static asset folders (Next.js /public/assignments/...) for Vercel deployment.
+
+### HTML nesting & Prettier Syntax Error Debugging (Completed)
+**Concepts Mastered:**
+- **HTML Nesting & Tag Matching**: Debugged layouts where missing closing tags caused subsequent sections (like `#center`) to be nested under a flex container (like `#nav`), inheriting unintended layout properties.
+- **Prettier VS Code Log Diagnostics**: Diagnosed formatter syntax errors ("Unexpected closing tag 'body'") by identifying that unclosed parent `div` elements caused the browser/formatter to expect matching tags before the body close.
+
+### Task 4: A4 Portfolio & Fitness Landing Pages (Completed)
+**Concepts Mastered:**
+- **Diverse Layout Execution**: Successfully built three distinct layout styles ranging from fitness apps to personal portfolios.
+- **Typography and Brand Alignment**: Utilized custom fonts and precise typography adjustments to establish distinct brand identities across different designs.
+- **Asset Management**: Maintained correct relative asset paths ensuring seamless integration into the Next.js portfolio dashboard.

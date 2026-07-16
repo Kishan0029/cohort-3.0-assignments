@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+   background-color: black;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+    grid-template-areas:
+        "top-left top-left top-box1 top-box2 top-right"
+        "top-left top-left top-box1 top-box2 right-1"
+        "left-center1 left-center2 center center right-1"
+        "left-center1 left-center2 center center right-2"
+        "left-bottom left-bottom left-bottom right-bottom right-bottom";
+    gap: 15px;
+    padding: 15px;
+}
+
+.main div {
+    border-radius: 18px;
+}
+
+.top-left {
+    background-color: #2D2D2D;
+    grid-area: top-left;
+    width: 100%;
+    padding: 25px;
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.top-left .first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-left .first img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-left .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.top-left .content h2 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-left .content p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #ADACB0;
+}
+
+.top-left .second {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.top-left .second h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.top-left .second p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #ADACB0;
+}
+
+.left-center1 {
+    grid-area: left-center1;
+    background-image: url(./assets/profile.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.left-center2 {
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+    grid-area: left-center2;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.left-center2 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ADACB0;
+    padding: 0 40px;
+}
+
+.left-center2 h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+
+.left-center2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-bottom {
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+    grid-area: left-bottom;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    position: relative;
+}
+
+.left-bottom .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left-bottom .content h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.left-bottom .content p {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #ADACB0;
+}
+
+.left-bottom img {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+}
+
+.top-box1 {
+    grid-area: top-box1;
+    background-image: url(./assets/mobile.webp);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-box2 {
+    grid-area: top-box2;
+    background-image: url(./assets/tablet.webp);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.center {
+    grid-area: center;
+    background-image: url(./assets/laptop.webp);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-right {
+    grid-area: top-right;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    padding: 25px;
+    place-items: center;
+
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.top-right i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #d4d4d4;
+    border-radius: 12px;
+    background: rgba(35, 35, 35, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.04),
+        0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.right-1 {
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+    grid-area: right-1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    ;
+}
+
+.right-1 h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.right-1 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ADACB0;
+}
+
+.right-1 .arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(230deg);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 18px;
+    color: #d4d4d4;
+    border-radius: 50%;
+    background: rgba(35, 35, 35, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.04),
+        0 4px 10px rgba(0, 0, 0, 0.35);
+
+}
+
+.right-2 {
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+    grid-area: right-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-2 img {
+    object-fit: cover;
+    filter: invert(0.5);
+}
+
+.right-bottom {
+    background: rgba(20, 20, 20, 0.75);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.3),
+        0 8px 20px rgba(0, 0, 0, 0.45);
+    grid-area: right-bottom;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    padding: 25px;
+}
+
+.right-bottom h2 {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.right-bottom p {
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ADACB0;
+}
+
+.right-bottom .hello {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #d4d4d4;
+}
+
+.right-bottom p span {
+    margin-left: 6px;
+    width: 45px;
+    height: 45px;
+}
+
+.right-bottom .arrow {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transform: rotate(230deg);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 18px;
+    color: #d4d4d4;
+    border-radius: 50%;
+    background: rgba(35, 35, 35, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.04),
+        0 4px 10px rgba(0, 0, 0, 0.35);
+}

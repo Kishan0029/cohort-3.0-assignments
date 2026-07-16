@@ -1,259 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden; /* Enforce no scroll */
-}
-
-.main {
-  height: 100vh; 
-  width: 100%;
-  background: #090706;
-  color: #f5f0eb;
-  padding: 15px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    background-color: #090706;
 }
 
 header {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17%;
+    width: 100%;
 }
 
 header h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 55px;
-  font-weight: 600;
+    font-family: ;
+    font-size: 58px;
+    color: white;
 }
 
-.line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 250px;
-  margin-top: 15px;
-}
-
-.line-left, .line-right {
-  height: 2px;
-  flex: 1;
-}
-
-.line-left {
-  background: linear-gradient(to right, transparent, #df7b22);
-}
-
-.line-right {
-  background: linear-gradient(to left, transparent, #df7b22);
-}
-
-.line img {
-  height: 25px; /* Adjust this to match your icon's size */
-  width: auto;
-  object-fit: contain;
-}
-
-.drinks {
-  flex: 1; /* Takes available space */
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 15px 0;
-  min-height: 0;
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 24px;
 }
 
 .card {
-  width: 24%;
-  background: #120e0c;
-  border-radius: 20px;
-  padding: 15px;
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 0;
+    width: 25px;
+    height: 215px; 
+    background-color: #120e0c;
+    border-radius: 30px;
 }
 
-.active {
-  border: 1px solid #df7b22;
-  box-shadow: 0 0 25px rgba(223, 123, 34, 0.15);
-}
-.tag {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  border: 1px solid #df7b22;
-  color: #df7b22;
-  padding: 8px 14px;
-  border-radius: 25px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: system-ui, -apple-system, sans-serif;
+#card1 {
+    border: 1px solid #df7b22;
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  background: #df7b22;
-  border-radius: 50%;
-  display: block;
+main {
+    width: 100%;
+    height: 100%;
 }
-.card img {
-  width: 100%;
-  height: 45%; /* Relative height so it shrinks on smaller screens */
-  min-height: 0;
-  object-fit: contain;
-  display: block;
-  margin: 5px auto;
+.section2 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 70%;
+    padding: 0px 35px;
 }
 
-.card h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 25px;
-  margin-top: 5px;
-}
-
-.card p {
-  color: #a39992;
-  margin-top: 5px;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 13px;
-
-}
-
-.card h3 {
-  color: #df7b22;
-  font-size: 18px;
-  margin: 10px auto 0 auto; 
-}
-
-.special {
-  flex: 1; /* Takes available space */
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: #120e0c;
-  border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 10px;
-  min-height: 0;
-}
-
-.left {
-  width: 38%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.left img {
-  width: 100%;
-  max-width: 350px;
-  height: 100%;
-  max-height: 280px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-.right {
-  width: 62%;
-}
-
-.right span {
-  color: #df7b22;
-  font-size: 12px;
-  font-family: system-ui, -apple-system, sans-serif;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-.right h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 38px;
-  margin: 10px 0;
-  font-weight: 600;
-}
-
-.right p {
-  color: #a39992;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.right button {
-  padding: 12px 25px;
-  background: transparent;
-  color: #df7b22;
-  border: 1px solid #df7b22;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-footer {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid rgba(223, 123, 34, 0.3);
-  padding-top: 15px;
-}
-footer p{
-  color: #a39992;
-}
-
-.footer-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #a39992;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 13px;
-}
-
-.footer-links a:not(:last-child)::after {
-  content: "•";
-  color: #df7b22;
-  margin-left: 20px;
-}
-
-.social {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.social a{
-  text-decoration: none;
-  color: #a39992;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 13px;
-}
-.social a i{
-  color: #df7b22;
-  padding: 5px;
-  border-radius: 50%;
-  border: 1px solid #df7b22;
+.big-card{
+    /* height: 450px;
+    width: 1850px; */
+    width: 100%;
+    height: 183px;
+    border-radius: 30px;
+    background-color: #120e0c;
 }
