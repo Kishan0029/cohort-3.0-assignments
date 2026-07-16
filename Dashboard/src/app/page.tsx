@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
 
-          {["A1", "A2", "A3"].map(category => {
+          {["A1", "A2", "A3", "A4"].map(category => {
             const categoryProjects = projectsData.filter(p => p.category === category);
             if (categoryProjects.length === 0) return null;
             return (
